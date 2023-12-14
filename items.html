@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Items</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cashierItems.css">
 </head>
-<body>
-    <h1>test</h1>
+<body class="container">
+    <div class="row">
+<!-- sideBar -->
+        <section class="col-1" id="sidebar">
+            <img class="mosLogo" src="images/MoS Logo.png" alt="">
+            <ul class="sideBarBtns">
+                <li>
+                    <a href="#">
+                        <img src="images/customerBtnNotselected.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/Items Btn selected.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="logoutBtn" src="images/icons8-logout-50.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+<!-- items -->
+        <section class="col-8 items">
+            <section class="row" >
+                <div id="maiItemBtnsWhite">
+                    <ul class="position-absolute">
+                        <li>
+                            <a href=""><img class="hotBtn" src="images/white/Hot Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/white/Burgers Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/white/Submarin Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/white/Fries Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/white/Pasta Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/white/Chicken Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/white/Beverages Btn.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="maiItemBtnsYellow">
+                    <ul>
+                        <li>
+                            <a href=""><img class="hotBtn" src="images/yellow/Hot Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/yellow/Burgers Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/yellow/Submarin Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/yellow/Fries Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/yellow/Pasta Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/yellow/Chicken Btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/yellow/Beverages Btn.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </section>
+
+
+            <section class="row" id="searchBar"> 
+                <h2 class="col-5 ">Select Items</h2>
+                <input type="text" class="col-3 searchBar d-flex align-items-center" placeholder="Search Item">                           
+                
+            </section>
+
+
+            <section class="row" id="itemsList">
+                
+            </section>
+        </section>
+
+<!-- cart -->
+        <div class="col-3 cart">
+            <div class="header">
+                <span>Cart</span>
+                <img src="images/icons8-cart-64.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="js/cashierItem.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
