@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.firstWhiteColor{background: #DFE2E9;}
+.secondRedColor{background: #F97462;}
+.thirdYellowColor{background: #FFDB6D;}
+.fourthBlackColor{background: #070707;}
+
+/* =============================================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.row{
+    height: 100vh;
+}
+
+/* Sidebar =========================================*/
+
+.mosLogo{
+    width: 100px;
+    padding-top: 3em;
+    margin-left: -0.5em;
+    
+ }
+ .sideBarBtns li{
+     padding-top: 2em;
+     list-style-type: none;
+ }
+ .sideBarBtns li .oldBtn{
+    width: 3.2em;
+    margin-left: -0.9em;
+ }
+ #sidebar{
+     background-color: #f7f7f7;
+ }
+ .sideBarBtns li .logoutBtn{
+     margin-left: -0.5em;
+     margin-top: 7em;
+     width: 2.7em;
+ }
+ .newBtn{
+    width: 2.7em;
+    margin-left: -0.5em;
+ }
+
+ /* content====================================================================== */
+ .customerInfo{
+    background-color: #DFE2E9;
+    padding-top: 8em;
+    padding-left: 6em;
+ }
+ .customerInfo td{
+    padding-top: 1em;
+ }
+ .btnTable{
+    margin-top: 10em;
+ }
+ .btn{
+    margin-top: 0.5em;
+    background-color: #F97462;
+    border: none;
+ }
+ .btn:hover{
+    background-color: #FFDB6D;
+    color: #070707;
+ }
+ input{
+    margin-left: 1em;
+    border-radius: 10px;
+    padding-top: 0.1em;
+    font-size: 1.2rem;
+ }
+ .rightSide{
+    background-color: #f7f7f7;
+ }

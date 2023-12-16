@@ -66,12 +66,7 @@
     animation: 1s;
  }
  #maiItemBtnsYellow{
-    /* display: none; */
     margin-top: -26.1em;
- }
- #searchBar{
-    height: 10%;
-    /* background-color: #F97462; */
  }
  #itemsList{
     height: 70%;
@@ -79,6 +74,10 @@
  }
 
 /* searchBar======================================== */
+#searchBar{
+    height: 10%;
+    /* background-color: #F97462; */
+ }
 .items .searchBar{
     margin-top: -2em;
     margin-left: 35em;

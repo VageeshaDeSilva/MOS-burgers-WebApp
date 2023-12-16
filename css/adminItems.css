@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.firstWhiteColor{background: #DFE2E9;}
+.secondRedColor{background: #F97462;}
+.thirdYellowColor{background: #FFDB6D;}
+.fourthBlackColor{background: #070707;}
+
+/* =============================================================================================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.row{
+    height: 100vh;
+}
+
+/* Sidebar =========================================*/
+
+.mosLogo{
+    width: 100px;
+    padding-top: 3em;
+    margin-left: -0.5em;
+    
+ }
+ .sideBarBtns li{
+     padding-top: 2em;
+     list-style-type: none;
+ }
+ .sideBarBtns li .oldBtn{
+    width: 3.2em;
+    margin-left: -0.9em;
+ }
+ #sidebar{
+     background-color: #f7f7f7;
+ }
+ .sideBarBtns li .logoutBtn{
+     margin-left: -0.5em;
+     margin-top: 7em;
+     width: 2.7em;
+ }
+ .newBtn{
+    width: 2.7em;
+    margin-left: -0.5em;
+ }
+
+
+ /* items-container ==========================================================*/
+ .searchBar{
+    height: 5%;
+    margin-top: -19.3em;
+    margin-left: 35em;
+    border-radius: 23px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.933)
+ }
+ .selectItemsHeading{
+    padding-top: 4em;
+    padding-left: 2.8em;
+ }
+.items-container{
+    background-color: #DFE2E9;
+}
+
+
+
+/* Expired Items============================================================== */
+.expiredItems{
+    background-color: #f7f7f7;
+ }
+
+ .expiredItems .header span{
+    padding-top: 1em;
+    padding-left: 1.5em;
+    font-size: 2rem;
+ }
+ .expiredItems .header{
+    padding-top: 7.5em;
+ }
