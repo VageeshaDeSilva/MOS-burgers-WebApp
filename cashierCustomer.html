@@ -32,19 +32,36 @@
         </div>
 
         <!-- Content ================================================================================-->
-        <div class="col-11 content">
-            <table>
-                <tr>
-                    <td>Customer Name</td>
-                    <td><input type="text" class="input-group-text"></td>
-                </tr>
-                <tr>
-                    <td>Customer Phone Number</td>
-                    <td><input type="text" class="input-group-text"></td>
-                </tr>
-            </table>
-            <div class="btn btn-primary">Add Customer</div>
-        </div>
+            <div class="content col-5">
+                <div class="addCust">
+                    <table class="addCustTable">
+                        <tr>
+                            <td>Customer Name</td>
+                            <td><input type="text" class="input-group-text" id="customerName"></td>
+                        </tr>
+                        <tr>
+                            <td>Customer Phone Number</td>
+                            <td><input type="text" class="input-group-text" id="customerPhoneNum"></td>
+                        </tr>
+                    </table>
+                    <div class="btn btn-primary" onclick="addCustomer()" id="addCustomerBtn">Add Customer</div>
+                    <div class="btn btn-primary" onclick="addNewCustomer()" id="addNewCustomerBtn">Add New Customer</div>
+                </div>                
+            </div>
+            
+            <div class="col-6 content" id="customerDetails">
+                <!-- <table>
+                    <tr>
+                        <td>Customer Name</td>
+                        <td>pasindu</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Phone Number</td>
+                        <td>0781314938</td>
+                    </tr>
+                </table> -->
+            </div>
+        
     </div>
 
 

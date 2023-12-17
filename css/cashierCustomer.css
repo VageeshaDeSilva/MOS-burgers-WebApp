@@ -46,16 +46,17 @@
   .content{
     background: #DFE2E9;
   }
-  .content table{
+  .content .addCustTable{
     margin-top: 14em;
   }
-  .content table tr td{
-    padding-left: 8em;
+  .content .addCust table tr td{
+    padding-left: 1em;
     padding-top: 1em;
   }
-  .btn{
-    margin-top: 8em;
-    margin-left: 34.1em;
+  #addCustomerBtn{
+    margin-top: 6em;
+    /*margin-left: 24em; */
+    display: block;
   }
   .btn-primary{
     background-color: #F97462;
@@ -66,4 +67,16 @@
   .btn-primary:hover{
     background-color: #FFDB6D;
     color: #070707;
+  }
+  #customerDetails{
+    padding-top: 13em;
+  }
+  #customerDetails table td{
+    padding-top: 2em;
+    padding-left: 5em;
+  }
+  #addNewCustomerBtn{
+    /* margin-left: 21.6em;
+    margin-top: -4em; */
+    display: none;
   }
