@@ -66,6 +66,7 @@
     animation: 1s;
  }
  #maiItemBtnsYellow{
+    display: none;
     margin-top: -26.1em;
  }
  #itemsList{
