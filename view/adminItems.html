@@ -41,13 +41,33 @@
             </ul>
         </section>
 
+        <!-- middle containt items section========================================================== -->
         <section class="col-8 items-container">
             <section class="row searchBarSection"> 
                 <h2 class="selectItemsHeading">Select Items</h2>
                 <input type="text" class="col-3 searchBar d-flex align-items-center" placeholder="Search Item">                                          
             </section>
+
+            <section class="itemCards row">
+                <div class="d-flex align-items-center justify-content-center position-relative flex-wrap">
+                    <article class="card card-body col-2 w-25 m-2 position-relative flex-column">
+                        <img src="../assets/images/burger images/1.jpg" class="card-img-top" alt="..."> 
+                        <div>
+                            <h5 class="item-name">Classic Burger (Large)</h5>
+                            <h6>Rs.750</h6>
+                            <h6>15%</h6>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </article>
+       
+                </div>
+            </section> 
+
+            <button class="btn btn-primary addItemsBtn" id="addItemBtn">Add Items</button>
         </section>
         
+
+        <!-- expired items showing right side section================================================= -->
         <div class="col-3 expiredItems">
             <div class="header">
                 <span>Expired Items</span>
@@ -55,6 +75,43 @@
             </div>
 
         </div>
+
+
+        <!-- add items form section================================================================= -->
+        <div class="formAddItems">
+            <div class="close-btn">&times;</div>
+            <form>
+                <div class="form-element">
+                    <label >Item Name</label>
+                    <input type="text" id="itemNameField">
+                </div>
+                <!-- <div class="form-element">
+                    <label >Description</label>
+                    <textarea id="descriptionArea" cols="20" rows="5"></textarea>
+                </div> -->
+                <div class="form-element">
+                    <label >price</label>
+                    <input type="number" id="priceField">
+                </div>
+                <div class="form-element">
+                    <label >Discount</label>
+                    <input type="number" id="discountField">
+                </div>
+                <div class="form-element">
+                    <label >category</label>
+                    <select id="categoryDropdown">
+                        <option value="Burgers">Burgers</option>
+                        <option value="Submarines">Submarines</option>
+                        <option value="Fries">Fries</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Beverages">Beverages</option>
+                    </select> 
+                </div>
+                <button class="btn btn-primary addBtn" type="button" onclick="addItem()">Add</button>
+            </form>                
+        </div>
+    
 
 
     </div>

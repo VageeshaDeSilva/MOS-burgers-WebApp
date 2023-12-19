@@ -5,7 +5,7 @@ function loginFunction(){
 
     if(userName=="abcd" && userId=="U0001"  && password=="1234"){
         // alert("avda");
-        window.location.assign("customer.html");
+        window.location.href("../view/customer.html");
     }
     else{
         alert("Please Try Again");

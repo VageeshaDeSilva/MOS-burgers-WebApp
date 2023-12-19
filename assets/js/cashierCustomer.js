@@ -30,7 +30,7 @@ function addCustomer(){
         document.getElementById("addNewCustomerBtn").style.marginTop='6em';
     }
     
-    // console.log(customerArr);                     
+    console.log(customerArr);                     
             
 }
 

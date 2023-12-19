@@ -62,7 +62,7 @@
     /* background-color: #3167e6; */
  }
  #maiItemBtnsWhite li a img:hover{
-    height: 0em;
+    /* height: 0em; */
     animation: 1s;
  }
  #maiItemBtnsYellow{
