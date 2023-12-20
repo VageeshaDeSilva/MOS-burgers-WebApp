@@ -1,13 +1,16 @@
-function loginFunction(){
-    var userName=document.getElementById("userName").value;
-    var userId=document.getElementById("userID").value;
-    var password=document.getElementById("pwd").value;
+function loginFunction(event){
+    event.preventDefault();
 
-    if(userName=="abcd" && userId=="U0001"  && password=="1234"){
-        // alert("avda");
-        window.location.href("../view/customer.html");
+    const userName=document.getElementById("userName").value;
+    const password=document.getElementById("pwd").value;
+
+    if(userName==="cashier" && password==="1234"){
+        window.location.href="./view/cashierCustomer.html";
+    }
+    else if(userName==="admin" && password==="1234"){
+        window.location.href="./view/adminItems.html";
     }
     else{
-        alert("Please Try Again");
+        alert("Invalid UserName or Password");
     }
 }

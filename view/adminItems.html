@@ -10,7 +10,7 @@
 <body class="container">
     <div class="row">
         <!-- sideBar ================================================================================-->
-        <section class="col-1" id="sidebar">
+        <section class="col-1 h-100" id="sidebar">
             <img class="mosLogo" src="../assets/images/MoS Logo.png" alt="">
             <ul class="sideBarBtns">
                 <li>
@@ -19,22 +19,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../view/adminCustomer.html">
                         <img class="oldBtn" src="../assets/images/customerBtnNotselected.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#order">
                         <img class="newBtn" src="../assets/images/Orders Btn.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#report">
                         <img class="newBtn" src="../assets/images/reportsBtn.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="../index.html">
                         <img class="logoutBtn" src="../assets/images/Logout Btn.png" alt="">
                     </a>
                 </li>
@@ -43,22 +43,32 @@
 
         <!-- middle containt items section========================================================== -->
         <section class="col-8 items-container">
+            <section class="all-filter-btnSection">
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="all">all</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Burgers">Burgers</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Submarines">Submarines</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Fries">Fries</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Pasta">Pasta</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Chicken">Chicken</button>
+                <button type="button" class="btn btn-outline-primary me-2 filterBtn" data-id="Beverages">Beverages</button>
+            </section>
             <section class="row searchBarSection"> 
                 <h2 class="selectItemsHeading">Select Items</h2>
                 <input type="text" class="col-3 searchBar d-flex align-items-center" placeholder="Search Item">                                          
             </section>
 
-            <section class="itemCards row">
-                <div class="d-flex align-items-center justify-content-center position-relative flex-wrap">
-                    <article class="card card-body col-2 w-25 m-2 position-relative flex-column">
-                        <img src="../assets/images/burger images/1.jpg" class="card-img-top" alt="..."> 
+            <section class="row itemCards ">
+                <div class="itemsSection d-flex align-items-center justify-content-center position-relative flex-wrap">
+                    <!-- <article class="card card-body col-2 w-25 m-2 position-relative flex-column">
+                        <img src="../assets/images/burger images/1.png" class="cardImages" alt="..."> 
                         <div>
                             <h5 class="item-name">Classic Burger (Large)</h5>
                             <h6>Rs.750</h6>
                             <h6>15%</h6>
                             <button class="btn btn-danger">Delete</button>
                         </div>
-                    </article>
+                    </article> -->
+                    
        
                 </div>
             </section> 
@@ -85,10 +95,6 @@
                     <label >Item Name</label>
                     <input type="text" id="itemNameField">
                 </div>
-                <!-- <div class="form-element">
-                    <label >Description</label>
-                    <textarea id="descriptionArea" cols="20" rows="5"></textarea>
-                </div> -->
                 <div class="form-element">
                     <label >price</label>
                     <input type="number" id="priceField">
@@ -107,6 +113,9 @@
                         <option value="Chicken">Chicken</option>
                         <option value="Beverages">Beverages</option>
                     </select> 
+                </div>
+                <div>
+                    <input class="form-element" type="file" accept="image/jpeg, image/png, image/jpg" id="burgerImage">
                 </div>
                 <button class="btn btn-primary addBtn" type="button" onclick="addItem()">Add</button>
             </form>                

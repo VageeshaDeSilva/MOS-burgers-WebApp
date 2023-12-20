@@ -34,6 +34,7 @@
  }
  #sidebar{
      background-color: #f7f7f7;
+     position:fixed;
  }
  .sideBarBtns li .logoutBtn{
      margin-left: -0.5em;
@@ -48,6 +49,24 @@
 
 
  /* items-container ==========================================================*/
+ .all-filter-btnSection{
+  margin-top: 5em;
+  margin-left: 3.5em;
+ }
+ .filterBtn{
+  color: #F97462;
+  border-color: #F97462;
+  border-radius: 10px; 
+ }
+ .filterBtn:hover{
+  background-color: #FFDB6D;
+  border-color: #F97462;
+  color: #070707;
+ }
+ .searchBarSection{
+  margin-top: -3em;
+  margin-left: -4em;
+ }
  .searchBar{
     height: 16%;
     margin-top: -3.6em;
@@ -58,11 +77,15 @@
     box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.933)
  }
  .selectItemsHeading{
-    padding-top: 4em;
+    padding-top: 1em;
     padding-left: 2.8em;
+    margin-top: 2em;
  }
 .items-container{
     background-color: #DFE2E9;
+    padding-left: 5.7em;
+    margin-left: 3em;
+    
 }
 .items-container .row{
   height: 27vh;
@@ -70,8 +93,16 @@
 .addItemsBtn{
   position: fixed;
   margin-top: 8em;
-  margin-left: 44em;
-  
+  margin-left: 43em;
+  z-index: 999;
+  opacity: 70%;
+  background-color: #F97462;
+  color: #070707;
+  border: none;
+}
+.addItemsBtn:hover{
+  background-color: #FFDB6D;
+  color: #070707;
 }
 .itemCards .card .card-body{
   display: grid;
@@ -81,6 +112,7 @@
 
 .formAddItems{
   position: absolute;
+  position: fixed;
   background-color: #ffffff;
   width: 27%;
   padding: 4em 1em;
@@ -89,7 +121,7 @@
   top: 10%;
   /* top: -150%; */
   left: 30%;
-  opacity: 0;
+  display: none;
   /* transform: translate(-50%,-50%)scale(1); */
   transition: top 0ms ease-in-out 200ms,
               opacity 200ms ease-in-out 0ms,
@@ -133,7 +165,10 @@
 
 /* Expired Items============================================================== */
 .expiredItems{
+    position:fixed;
     background-color: #f7f7f7;
+    margin-left: 58em;
+    height: 100vh;
  }
 
  .expiredItems .header span{
